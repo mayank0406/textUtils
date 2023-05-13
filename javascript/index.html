@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="hone">create a new tab</h1>
+    <button id="btn" onclick="show()">create</button>
+
+
+    <script>
+        function show() {
+            let header = document.getElementById("hone");
+            let div = document.createElement("div");
+            div.style.height="50px";
+            div.style.border="2px solid black"
+            div.style.textAlign="center";
+            div.style.fontSize="25px"
+            div.style.fontWeight="bold";
+            div.innerText ='welcome to this page';
+            document.body.prepend(div);
+            header.style.display="none";
+            // div.insertBefore()
+        }
+    </script>
+</body>
+
+</html>
